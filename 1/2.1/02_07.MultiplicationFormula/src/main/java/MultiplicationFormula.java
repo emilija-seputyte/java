@@ -10,8 +10,8 @@ public class MultiplicationFormula {
         int a = Integer.parseInt(scanner.nextLine());
         System.out.println("Give the second number:");
         int b = Integer.parseInt(scanner.nextLine());
-        int multiple = a * b;
-        System.out.println(a + " * " + b + " = " + multiple);
+//        int multiple = a * b;
+        System.out.println(a + " * " + b + " = " + Math.multiplyExact(a, b));
 
     }
 }
