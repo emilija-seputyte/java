@@ -1,8 +1,11 @@
 
 import fi.helsinki.cs.tmc.edutestutils.MockInOut;
 import fi.helsinki.cs.tmc.edutestutils.Points;
+
 import java.lang.reflect.Field;
+
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 @Points("02-22")
@@ -20,7 +23,7 @@ public class ReprintTest {
     public void testMethod() {
         MockInOut mio = new MockInOut("");
         try {
-            Reprint.printText();
+            Reprint.printText(i);
             assertEquals("You didn't print the right text in the printText() method!",
                     "In a hole in the ground there lived a method", mio.getOutput().trim());
         } catch (Throwable t) {
