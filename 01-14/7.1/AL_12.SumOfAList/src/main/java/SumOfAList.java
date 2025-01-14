@@ -13,11 +13,14 @@ public class SumOfAList {
             if (input == -1) {
                 break;
             }
-
             list.add(input);
         }
+        int total = 0;
+        for (int i = 0; i < list.size(); i++) {
+            total = total + list.get(i);
+        }
 
-        System.out.println("");
+        System.out.println("Sum: " + total);
 
         // toteuta listan lukujen summan laskeminen tänne
     }
