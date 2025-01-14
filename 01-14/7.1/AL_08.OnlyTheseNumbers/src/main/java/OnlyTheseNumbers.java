@@ -13,9 +13,23 @@ public class OnlyTheseNumbers {
             if (number == -1) {
                 break;
             }
-
             numbers.add(number);
         }
-
+        System.out.print("From where? ");
+        int firstNumber = Integer.parseInt(scanner.nextLine());
+        System.out.print("To where? ");
+        int lastNumber = Integer.parseInt(scanner.nextLine());
+        for (int i = firstNumber; i <= lastNumber; i++) {
+            System.out.println(numbers.get(i));
+        }
     }
 }
+
+//            if (i > firstNumber && i < lastNumber) {
+//                System.out.println(numbers.size());
+
+
+
+
+
+
