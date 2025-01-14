@@ -13,11 +13,17 @@ public class GreatestInList {
             if (input == -1) {
                 break;
             }
-
             list.add(input);
         }
-        
-        System.out.println("");
+        int greatest = list.get(0);
+        for (int i = 0; i < list.size(); i++) {
+            int number = list.get(i);
+            if (greatest < number) {
+                greatest = number;
+            }
+        }
+
+        System.out.println("The greatest number is " + greatest);
 
         // implement finding the greatest number in the list here
     }
